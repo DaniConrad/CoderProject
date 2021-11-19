@@ -4,6 +4,7 @@
 .serv-sec {
     @include box(80%, auto);
     margin: auto;
+    margin-top: 1rem;
 
     .serv-sec-img {
         @extend %img-standard;

@@ -245,6 +245,7 @@
   width: 80%;
   height: auto;
   margin: auto;
+  margin-top: 1rem;
 }
 .serv-sec .serv-title, .serv-sec .serv-sec-p {
   margin: 2px;
