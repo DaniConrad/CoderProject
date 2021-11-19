@@ -1,0 +1,32 @@
+@import '../base/extend';
+@import '../base/mixin';
+
+.serv-sec {
+    @include box(80%, auto);
+    margin: auto;
+
+    .serv-sec-img {
+        @extend %img-standard;
+    }
+    .serv-title, .serv-sec-p{
+        margin: 2px;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .serv-sec{
+        width: 70% !important;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .serv-sec {
+    
+        .serv-sec-img {
+            width: 70% !important;
+        }
+    }
+
+}

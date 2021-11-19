@@ -1,0 +1,56 @@
+// ---------Section 2---------
+.index-sec2 {
+    background-image: url(../src/img/sec-back.png);
+    background-size: cover;
+    min-height: 50vh;
+
+    .index-sec2-img {
+        width: 30%;
+    }
+
+    .index-sec2-item {
+        border-radius: 30px;
+    }
+
+    .index-sec2-item:hover {
+        background-color: rgba(0, 0, 0, 0.158);
+        transition: 700ms;
+        transform: translate(-5px, -10px);
+    }
+
+}
+
+
+// ---------End of section 2---------
+
+
+
+
+// ---------Section 3---------
+.index-sec3-img {
+    width: 90%;
+}
+
+// ---------End of section 3---------
+
+
+//--------------MediaQueries-----------
+@media screen and (max-width: 576px) {
+    .index-sec3-title {
+        padding: 10px;
+        font-size: 28px !important;
+    }
+
+    .index-sec2 {
+        .index-sec2-item {
+
+            .index-sec2-img {
+                height: 75%;
+            }
+            .index-sec2-text{
+                color: #fff;
+            }
+        }
+    }
+
+}

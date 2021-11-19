@@ -1,0 +1,53 @@
+@import '../base/variables';
+@import '../base/extend';
+
+// -----------Navbar--------
+.header {
+    background-image: url(../src/img/image.png);
+    background-size: cover;
+    min-height: 100vh;
+
+    // Logo--  text and image
+    .logo1 {
+        width: 10%;
+
+        .logo {
+            width: 100%;
+        }
+    }
+    //links
+    .nav-a-item:hover{
+            @extend %menu-style;
+            }
+    }
+
+
+
+@media screen and (max-width: 992px) {
+    .logo-container {
+
+        .logo1 {
+            width: 20%;
+
+            .logo-text {
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .logo-container {
+        justify-content: space-around !important;
+
+        .logo1 {
+            width: 20%;
+
+            .logo-text {
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+
+// -----------Fin de Navbar--------

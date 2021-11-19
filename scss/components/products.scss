@@ -1,0 +1,36 @@
+@import '../base/extend';
+
+
+.prod-sec {
+    @extend %box-standard;
+
+    .prod-sec-img {
+        @extend %img-standard;
+    }
+    .prod-sec-img-app{
+        width: 40%;
+    }
+
+    .prod-title,
+    .prod-sec-p {
+        margin: 2px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .prod-sec {
+        width: 70% !important;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .prod-sec {
+
+        .prod-sec-img {
+            width: 70% !important;
+        }
+    }
+
+}

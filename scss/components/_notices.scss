@@ -1,0 +1,29 @@
+@import '../base/extend';
+
+.not-art {
+    @extend %box-standard;
+
+    .not-img {
+        @extend %img-standard;
+    }
+    .not-title, .not-art-p{
+        margin: 2px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .not-art{
+        width: 70% !important;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .not-art {
+    
+        .not-img {
+            width: 70% !important;
+        }
+    }
+
+}

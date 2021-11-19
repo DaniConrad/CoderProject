@@ -1,0 +1,9 @@
+@mixin box($width, $height){
+        width: $width;
+        height: $height;
+}
+
+@mixin card($dis, $content, ){
+    display: $dis;
+    justify-content: $content;
+}
