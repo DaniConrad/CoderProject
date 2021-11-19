@@ -23,6 +23,7 @@
 .prod-sec, .not-art {
   width: 80%;
   margin: auto;
+  margin-top: 1rem;
 }
 
 .header {
@@ -146,6 +147,7 @@
 .prod-sec, .not-art {
   width: 80%;
   margin: auto;
+  margin-top: 1rem;
 }
 
 .pages-header {
@@ -205,6 +207,7 @@
 .prod-sec, .not-art {
   width: 80%;
   margin: auto;
+  margin-top: 1rem;
 }
 
 .not-art .not-title, .not-art .not-art-p {
@@ -235,6 +238,7 @@
 .prod-sec, .not-art {
   width: 80%;
   margin: auto;
+  margin-top: 1rem;
 }
 
 .serv-sec {
@@ -270,6 +274,7 @@
 .prod-sec, .not-art {
   width: 80%;
   margin: auto;
+  margin-top: 1rem;
 }
 
 .prod-sec .prod-sec-img-app {
@@ -323,6 +328,7 @@
 .not-art, .prod-sec {
   width: 80%;
   margin: auto;
+  margin-top: 1rem;
 }
 
 p {
