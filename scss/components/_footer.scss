@@ -27,11 +27,12 @@
         width: 60%;
     }
 
-    .contact-container{
-        .contact-title{
+    .contact-container {
+        .contact-title {
             font-size: 2.5rem;
         }
-        .contact-container-item{
+
+        .contact-container-item {
             font-size: 1.3rem;
         }
     }
@@ -41,7 +42,7 @@
         .footer-social-media-title {
             font-size: 2.5rem;
         }
-        
+
 
         .social-media-icons {
             flex-direction: row !important;
@@ -61,5 +62,16 @@
             text-align: center;
         }
     }
+
+}
+
+@media screen and (max-width: 480px) {
+    .contact-container {
+        .footer-map {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
 
 }

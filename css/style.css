@@ -100,6 +100,12 @@
     text-align: center;
   }
 }
+@media screen and (max-width: 480px) {
+  .contact-container .footer-map {
+    display: flex;
+    justify-content: center;
+  }
+}
 .index-sec2 {
   background-image: url(../src/img/sec-back.png);
   background-size: cover;
