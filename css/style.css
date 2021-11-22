@@ -296,22 +296,10 @@
   .prod-sec .prod-sec-img {
     width: 70% !important;
   }
+  .prod-sec .prod-sec-img-app {
+    width: 85%;
+  }
 }
-.secprod-sec .secprod-sec-title {
-  display: flex;
-  justify-content: center;
-  margin: 3%;
-  text-decoration: underline;
-}
-.secprod-sec .card-prod {
-  display: flex;
-  justify-content: space-evenly;
-}
-.secprod-sec .card-prod-1 {
-  display: flex;
-  justify-content: space-around;
-}
-
 /*----------FUENTES----------*/
 /*Fuente del logo.*/
 /*Fuente de los títulos.*/
