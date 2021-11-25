@@ -212,6 +212,9 @@
   .pages-header .logo-pages-container {
     justify-content: space-around;
   }
+  .pages-header .page-title {
+    color: #DEDEDE;
+  }
 }
 @media screen and (max-width: 480px) {
   .pages-header {
