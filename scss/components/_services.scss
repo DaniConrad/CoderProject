@@ -1,5 +1,6 @@
 @import '../base/extend';
 @import '../base/mixin';
+@import '../base/variables';
 
 .serv-sec {
     @include box(80%, auto);

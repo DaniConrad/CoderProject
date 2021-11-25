@@ -9,6 +9,24 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Kanit:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Kanit:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Kanit:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Kanit:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Kanit:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Kanit:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Kanit:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap");
 .header .nav-a-item:hover {
   background-color: rgba(153, 145, 145, 0.192);
   transition: 500ms;
@@ -64,6 +82,10 @@
     text-align: center;
   }
 }
+/*----------FUENTES----------*/
+/*Fuente del logo.*/
+/*Fuente de los títulos.*/
+/*Fuente de los textos.*/
 .footer {
   background-color: #c3cfd9;
   padding: 0.5rem;
@@ -117,6 +139,10 @@
     justify-content: center;
   }
 }
+/*----------FUENTES----------*/
+/*Fuente del logo.*/
+/*Fuente de los títulos.*/
+/*Fuente de los textos.*/
 .index-sec2 {
   background-image: url(../src/img/sec-back.png);
   background-size: cover;
@@ -173,6 +199,10 @@
   margin-top: 1rem;
 }
 
+/*----------FUENTES----------*/
+/*Fuente del logo.*/
+/*Fuente de los títulos.*/
+/*Fuente de los textos.*/
 .pages-header {
   background-image: url(../src/img/back-header.png);
   background-size: cover;
@@ -240,6 +270,10 @@
   margin-top: 1rem;
 }
 
+/*----------FUENTES----------*/
+/*Fuente del logo.*/
+/*Fuente de los títulos.*/
+/*Fuente de los textos.*/
 .not-art .not-title, .not-art .not-art-p {
   margin: 2px;
 }
@@ -271,6 +305,10 @@
   margin-top: 1rem;
 }
 
+/*----------FUENTES----------*/
+/*Fuente del logo.*/
+/*Fuente de los títulos.*/
+/*Fuente de los textos.*/
 .serv-sec {
   width: 80%;
   height: auto;
@@ -308,6 +346,10 @@
   margin-top: 1rem;
 }
 
+/*----------FUENTES----------*/
+/*Fuente del logo.*/
+/*Fuente de los títulos.*/
+/*Fuente de los textos.*/
 .prod-sec .prod-sec-img-app {
   width: 40%;
 }
