@@ -36,6 +36,12 @@
 
 //--------------MediaQueries-----------
 @media screen and (max-width: 576px) {
+    .index-sec1{
+        .index-sec1-h3{
+            text-align: center;
+        }
+    }
+
     .index-sec3-title {
         padding: 10px;
         font-size: 28px !important;
