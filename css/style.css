@@ -1,12 +1,12 @@
 @charset "UTF-8";
 /*----------FUENTES----------*/
 /*Fuente del logo.*/
-@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Kanit:wght@300&display=swap");
 /*Fuente de los títulos.*/
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap");
 /*Fuente de los textos.*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Kanit:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap");
 .header .nav-a-item:hover {
@@ -36,6 +36,9 @@
 }
 .header .logo1 .logo {
   width: 100%;
+}
+.header .logo1 .logo-text {
+  font-family: "Kanit", sans-serif;
 }
 @media screen and (max-width: 992px) {
   .logo-container .logo1 {
@@ -173,6 +176,9 @@
 }
 .pages-header .logo-pages-container .logo2 {
   width: 10%;
+}
+.pages-header .logo-pages-container .logo2 .logo-text {
+  font-family: "Kanit", sans-serif;
 }
 .pages-header .logo-pages-container .logo-pages {
   width: 100%;
