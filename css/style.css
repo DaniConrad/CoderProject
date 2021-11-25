@@ -39,6 +39,7 @@
 }
 .header .logo1 .logo-text {
   font-family: "Kanit", sans-serif;
+  font-size: 3rem;
 }
 @media screen and (max-width: 992px) {
   .logo-container .logo1 {
@@ -182,6 +183,7 @@
 }
 .pages-header .logo-pages-container .logo2 .logo-text {
   font-family: "Kanit", sans-serif;
+  font-size: 3rem;
 }
 .pages-header .logo-pages-container .logo-pages {
   width: 100%;
