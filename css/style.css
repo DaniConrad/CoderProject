@@ -55,6 +55,10 @@
   .logo-container .logo1 .logo-text {
     font-size: 2.5rem;
   }
+
+  .comment-container .index-header-div-h2 {
+    text-align: center;
+  }
 }
 .footer {
   background-color: #c3cfd9;
