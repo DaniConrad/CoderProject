@@ -73,6 +73,9 @@
 .footer .footer-logo-container .logo-footer {
   width: 30%;
 }
+.footer .footer-list {
+  list-style: none;
+}
 .footer .icon-link .local-icon {
   width: 15%;
 }
