@@ -45,7 +45,7 @@
 }
 
 .header {
-  background-image: url(../src/img/image.png);
+  background-image: url(../src/img/image.webp);
   background-size: cover;
   min-height: 100vh;
 }
@@ -144,7 +144,7 @@
 /*Fuente de los títulos.*/
 /*Fuente de los textos.*/
 .index-sec2 {
-  background-image: url(../src/img/sec-back.png);
+  background-image: url(../src/img/sec-back.webp);
   background-size: cover;
   min-height: 50vh;
 }
@@ -204,7 +204,7 @@
 /*Fuente de los títulos.*/
 /*Fuente de los textos.*/
 .pages-header {
-  background-image: url(../src/img/back-header.png);
+  background-image: url(../src/img/back-header.webp);
   background-size: cover;
   min-height: 35vh;
 }
@@ -231,7 +231,7 @@
     width: 20%;
   }
   .pages-header .logo-pages-container .logo-text {
-    font-size: 2.2rem;
+    font-size: 2.2rem !important;
   }
   .pages-header .logo-pages-container .header-link {
     color: #fff;
