@@ -33,7 +33,7 @@
 }
 
 .prod-sec .prod-sec-img, .serv-sec .serv-sec-img, .not-art .not-img {
-  width: 25%;
+  width: 35%;
   height: auto;
   margin: 1rem;
 }
@@ -191,7 +191,7 @@
 }
 
 .prod-sec .prod-sec-img, .serv-sec .serv-sec-img, .not-art .not-img {
-  width: 25%;
+  width: 35%;
   height: auto;
   margin: 1rem;
 }
@@ -262,7 +262,7 @@
 }
 
 .prod-sec .prod-sec-img, .serv-sec .serv-sec-img, .not-art .not-img {
-  width: 25%;
+  width: 35%;
   height: auto;
   margin: 1rem;
 }
@@ -297,7 +297,7 @@
 }
 
 .prod-sec .prod-sec-img, .serv-sec .serv-sec-img, .not-art .not-img {
-  width: 25%;
+  width: 35%;
   height: auto;
   margin: 1rem;
 }
@@ -338,7 +338,7 @@
 }
 
 .prod-sec .prod-sec-img, .not-art .not-img, .serv-sec .serv-sec-img {
-  width: 25%;
+  width: 35%;
   height: auto;
   margin: 1rem;
 }
@@ -353,9 +353,6 @@
 /*Fuente del logo.*/
 /*Fuente de los títulos.*/
 /*Fuente de los textos.*/
-.prod-sec .prod-sec-img-app {
-  width: 40%;
-}
 .prod-sec .prod-title,
 .prod-sec .prod-sec-p {
   margin: 2px;
@@ -384,7 +381,7 @@
 }
 
 .not-art .not-img, .serv-sec .serv-sec-img, .prod-sec .prod-sec-img {
-  width: 25%;
+  width: 35%;
   height: auto;
   margin: 1rem;
 }
