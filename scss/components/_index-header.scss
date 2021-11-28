@@ -3,10 +3,13 @@
 
 // -----------Navbar--------
 .header {
-    background-image: url(../src/img/image.webp);
+    background-image: url(../src/img/index/image.webp);
     background-size: cover;
     min-height: 100vh;
 
+    .navbar-icon2{
+        background-image: url(../src/img/index/menu.png);
+    }
     // Logo--  text and image
     .logo1 {
         width: 10%;

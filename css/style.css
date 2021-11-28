@@ -45,9 +45,12 @@
 }
 
 .header {
-  background-image: url(../src/img/image.webp);
+  background-image: url(../src/img/index/image.webp);
   background-size: cover;
   min-height: 100vh;
+}
+.header .navbar-icon2 {
+  background-image: url(../src/img/index/menu.png);
 }
 .header .logo1 {
   width: 10%;
@@ -144,7 +147,7 @@
 /*Fuente de los títulos.*/
 /*Fuente de los textos.*/
 .index-sec2 {
-  background-image: url(../src/img/sec-back.webp);
+  background-image: url(../src/img/index/sec-back.webp);
   background-size: cover;
   min-height: 50vh;
 }
