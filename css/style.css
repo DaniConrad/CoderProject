@@ -353,9 +353,17 @@
 /*Fuente del logo.*/
 /*Fuente de los títulos.*/
 /*Fuente de los textos.*/
-.prod-sec .prod-title,
-.prod-sec .prod-sec-p {
-  margin: 2px;
+.prod-sec a:visited {
+  text-decoration: none;
+  color: #000;
+}
+.prod-sec a:link {
+  text-decoration: none;
+  color: #000;
+}
+.prod-sec .prod-card:hover {
+  background-color: rgba(236, 82, 177, 0.397);
+  transition: 500ms;
 }
 
 @media screen and (max-width: 768px) {

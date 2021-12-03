@@ -2,18 +2,33 @@
 @import '../base/variables';
 
 
+
 .prod-sec {
     @extend %box-standard;
+    
+    a:visited{
+        text-decoration: none;
+        color: #000;
+    }
+    
+    a:link{
+        text-decoration: none;
+        color: #000;
+    }
 
-    .prod-sec-img {
+        .prod-sec-img {
         @extend %img-standard;
     }
     
-    .prod-title,
-    .prod-sec-p {
-        margin: 2px;
+    .prod-card:hover{
+        background-color: rgba(236, 82, 177, 0.397);
+         transition: 500ms;
+
     }
+    
+    
 }
+
 
 
 @media screen and (max-width: 768px) {
@@ -29,9 +44,11 @@
         .prod-sec-img {
             width: 70% !important;
         }
-        .prod-sec-img-app{
+
+        .prod-sec-img-app {
             width: 85%;
         }
     }
 
 }
+
