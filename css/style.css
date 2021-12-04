@@ -461,10 +461,10 @@
 }
 .prod-lights .lights-prod-img {
   width: 17rem;
-  height: 20rem;
+  height: 25rem;
 }
 .prod-lights .card-text-standard-lights {
-  padding-bottom: 5.8rem;
+  margin-bottom: 2.4rem;
 }
 
 @media screen and (max-width: 576px) {
