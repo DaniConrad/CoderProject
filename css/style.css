@@ -30,6 +30,9 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Kanit:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Kanit:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap");
 .header .nav-a-item:hover {
   background-color: rgba(153, 145, 145, 0.192);
   transition: 500ms;
@@ -418,16 +421,54 @@
   width: 17rem;
   height: 20rem;
 }
-.prod-security .card-text-standard {
+.prod-security .card-text-standard-security {
   padding-bottom: 5.8rem;
-}
-.prod-security .prod-card:hover {
-  background-color: rgba(236, 82, 177, 0.397);
-  transition: 500ms;
 }
 
 @media screen and (max-width: 576px) {
-  .card-text-standard {
+  .card-text-standard-security {
+    padding-bottom: 0 !important;
+  }
+}
+.header .nav-a-item:hover {
+  background-color: rgba(153, 145, 145, 0.192);
+  transition: 500ms;
+}
+
+.not-art .not-img, .serv-sec .serv-sec-img, .prod-sec .prod-sec-img {
+  width: 35%;
+  height: auto;
+  margin: 1rem;
+}
+
+.not-art, .prod-sec {
+  width: 80%;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+/*----------FUENTES----------*/
+/*Fuente del logo.*/
+/*Fuente de los títulos.*/
+/*Fuente de los textos.*/
+.prod-lights a:visited {
+  text-decoration: none;
+  color: #000;
+}
+.prod-lights a:link {
+  text-decoration: none;
+  color: #000;
+}
+.prod-lights .lights-prod-img {
+  width: 17rem;
+  height: 20rem;
+}
+.prod-lights .card-text-standard-lights {
+  padding-bottom: 5.8rem;
+}
+
+@media screen and (max-width: 576px) {
+  .card-text-standard-lights {
     padding-bottom: 0 !important;
   }
 }

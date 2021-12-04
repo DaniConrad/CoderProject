@@ -1,0 +1,32 @@
+@import '../base/extend';
+@import '../base/variables';
+
+.prod-lights {
+    // @extend %box-standard;
+    
+    a:visited{
+        text-decoration: none;
+        color: #000;
+    }
+    
+    a:link{
+        text-decoration: none;
+        color: #000;
+    }
+    
+     .lights-prod-img {
+             width: 17rem;
+             height: 20rem;
+     }
+     .card-text-standard-lights{
+         padding-bottom: 5.8rem;
+     }    
+}
+
+
+@media screen and (max-width: 576px) {
+    .card-text-standard-lights{
+        padding-bottom: 0 !important;
+    }
+
+}
