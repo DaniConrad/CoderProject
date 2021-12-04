@@ -57,8 +57,14 @@
             <li class="nav-item">
               <a class="nav-link fs-5 header-link" href="notices.html">NOTICIAS</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active fs-5 header-link" href="products.html">PRODUCTOS</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle nav-link fs-5 header-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                PRODUCTOS
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="../pages/prod-security.html">SEGURIDAD</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link fs-5 header-link" href="services.html">SERVICIOS</a>
@@ -72,74 +78,58 @@
     </nav>
 
     <div class="d-flex justify-content-center ">
-      <h1 class="page-title">PRODUCTOS | PINGTEC</h1>
+      <h1 class="page-title m-2">PRODUCTOS | SEGURIDAD</h1>
     </div>
   </header>
 
-  <div class="prod-sec mb-3">
-    <div class="row row-cols-1 row-cols-md-2 g-4">
-      <div class="col">
-        <div class="card align-items-center prod-card">
-          <img src="../img/products/application.png" alt="Aplicación que conecta con elementos" title="Aplicación"
-            class="prod-sec-img card-img-top">
-          <div class="card-body d-flex flex-column align-items-center">
-            <h5 class="card-title fs-3">Aplicación propia</h5>
-            <!-- Oculto en mobile -->
-            <p class="card-text d-none d-sm-block prod-card-text">Contamos con un software propio, que permite que el
-              usuario enlace
-              sus dispositivos con versatilidad, mediante códigos QR o códigos alfanuméricos. Dónde se podrá colocar
-              la
-              información de nuestros ambientes y controlarlos.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <a href="">
-          <div class="card align-items-center prod-card">
-            <img src="../img/products/alarm.webp" alt="Alarma de gases robo o incendio" title="Alarma"
-              class="prod-sec-img prod-sec-img-alarm card-img-top">
-            <div class="card-body d-flex flex-column align-items-center">
-              <h5 class="card-title fs-3">Accesorios de seguridad</h5>
-              <!-- Oculto en mobile -->
-              <p class="card-text d-none d-sm-block">Nuestros productos de seguridad darán tranquilidad tanto
-                de la delincuencia como de los accidentes domésticos. Algunos de ellos son detectores de gases, cámaras
-                de
-                seguridad, sensores de inundación y alarmas de incendio, entre otros.</p>
+  <div class="prod-security">
+    <div class="container">
+      <div class="row">
+        <div class="col col-lg-3 col-md-6 col-sm-12 col-12 d-flex justify-content-center">
+          <div class="card m-2 " style="width: 18rem;">
+            <img src="../img/prod-security/ext-wifi-cam.webp" class="card-img-top security-prod-img" alt="Cámara de vigilancia con antena exterior">
+            <div class="card-body card-standard">
+              <h5 class="card-title">Cámara exterior Wifi </h5>
+              <p class="card-text card-text-standard">Bastará con alimentarla con 12Vcc y proveerle de Wifi para vigilar tu casa desde una App, dónde podrás marcar zonas para recibir notificaciones.</p>
+              <a href="mailto:estoesunemail@pingtec.com.ar?subject=Cotización:%20cámara%20Wifi%20exterior" class="btn btn-primary text-light">Silicitar Cotización</a>
             </div>
           </div>
-        </a>
-      </div>
-      <div class="col">
-        <div class="card align-items-center prod-card">
-          <img src="../img/products/coffee.webp" alt="Cafetera" title="Cafetera" class="prod-sec-img card-img-top">
-          <div class="card-body d-flex flex-column align-items-center">
-            <h5 class="card-title fs-3">Pequeños electrodomésticos</h5>
-            <!-- Oculto en mobile -->
-            <p class="card-text d-none d-sm-block">La línea de ElectroSmart de PingTec permitirá que algunos de los
-              electrodomésticos
-              normales que tenemos en nuestros hogares muestren mejor versatilidad y control sobre ellos,algunos de
-              estos son
-              aspiradoras robot, cafeteras, o microondas los cuáles podrás monitorear y controlar desde tus
-              dispositivos.</p>
+        </div>
+        <div class="col col-lg-3 col-md-6 col-sm-12 col-12 d-flex justify-content-center">
+          <div class="card m-2 card-standard" style="width: 18rem;">
+            <img src="../img/prod-security/gadnic-cam.webp" class="card-img-top security-prod-img" alt="Cámara de vigilancia tipo domo de exterior">
+            <div class="card-body">
+              <h5 class="card-title">Cámara exterior Wifi tipo domo</h5>
+              <p class="card-text card-text-standard">Deberás alimentarla con 12vcc y asignarle una red de Wifi estable, esta ofrecerá una visión 360.</p>
+              <a href="mailto:estoesunemail@pingtec.com.ar?subject=Cotización:%20cámara%20Wifi%20exterior%20tipo%20DOMO" class="btn btn-primary text-light">Silicitar Cotización</a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="card align-items-center prod-card">
-          <img src="../img/products/lights.webp" alt="Luminarias o lamparas" title="Luminarias"
-            class="prod-sec-img card-img-top">
-          <div class="card-body d-flex flex-column align-items-center">
-            <h5 class="card-title fs-3">Luminarias WiFi</h5>
-            <!-- Oculto en mobile -->
-            <p class="card-text d-none d-sm-block">La iluminación WiFi es el presente y nos permite vivir en el futuro
-              dónde levantarse a
-              apagar la luz de la habitación una vez acostado deja de ser un problema, con esta línea de luminarias sólo
-              deberás
-              cambiar la lámpara y una vez enlazada a la App ya tienes el control de la misma.</p>
+        <div class="col col-lg-3 col-md-6 col-sm-12 col-12 d-flex justify-content-center">
+          <div class="card m-2 card-standard" style="width: 18rem;">
+            <img src="../img/prod-security/motor-ext-cam.webp" class="card-img-top security-prod-img" alt="Cámara con antena exterior">
+            <div class="card-body">
+              <h5 class="card-title">Cámara exterior Wifi robótica</h5>
+              <p class="card-text">Alimentación de 12Vcc, wifi, con movimiento, dando así la posibilidad de anular puntos ciegos fácilmente sin necesidad de modificar su anclaje, también podrás moverla en cualquier momento desde la App. </p>
+              <a href="mailto:estoesunemail@pingtec.com.ar?subject=Cotización:%20cámara%20Wifi%20exterior%20robótica" class="btn btn-primary text-light">Silicitar Cotización</a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-3 col-md-6 col-sm-12 col-12 d-flex justify-content-center">
+          <div class="card m-2 card-standard" style="width: 18rem;">
+            <img src="../img/prod-security/robot-cam.webp" class="card-img-top security-prod-img" alt="Cámara con antena exterior">
+            <div class="card-body">
+              <h5 class="card-title">Cámara interior Wifi robótica</h5>
+              <p class="card-text card-text-standard">Alimentación de 12Vcc, wifi, con movimiento, podrás revisar consultorios, oficinas o cualquier interior. </p>
+              <a href="mailto:estoesunemail@pingtec.com.ar?subject=Cotización:%20cámara%20Wifi%20interior%20robótica" class="btn btn-primary text-light">Silicitar Cotización</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    
+    
+    
   </div>
 
   <!-- Pié de página -->

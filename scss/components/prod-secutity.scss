@@ -1,0 +1,35 @@
+@import '../base/extend';
+@import '../base/variables';
+
+.prod-security {
+    // @extend %box-standard;
+    
+    a:visited{
+        text-decoration: none;
+        color: #000;
+    }
+    
+    a:link{
+        text-decoration: none;
+        color: #000;
+    }
+    
+     .security-prod-img {
+             width: 17rem;
+             height: 20rem;
+     }
+     .card-text-standard{
+         padding-bottom: 5.8rem;
+     }
+
+    
+    .prod-card:hover{
+        background-color: rgba(236, 82, 177, 0.397);
+         transition: 500ms;
+
+    }
+    
+    
+}
+
+
