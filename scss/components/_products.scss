@@ -16,8 +16,9 @@
         color: #000;
     }
 
-        .prod-sec-img {
-        @extend %img-standard;
+        .card-img-standard {
+        max-width: 284px;
+        max-height: 284px;
     }
     
     .prod-card:hover{
@@ -31,27 +32,26 @@
     
     
 }
-
-
-
-@media screen and (max-width: 768px) {
-    .prod-sec {
-        width: 70% !important;
+.btn-vaciar{
+    border: none;
+    background-color: #c024a683;
+    border-radius: 3px;
+}
+.btn-quitar{
+    border: none;
+    .btn-color-standard{
+        color: 	#FF0000;
     }
 }
 
 
+
+@media screen and (max-width: 768px) {
+    
+}
+
+
 @media screen and (max-width: 576px) {
-    .prod-sec {
-
-        .prod-sec-img {
-            width: 70% !important;
-        }
-
-        .prod-sec-img-app {
-            width: 85%;
-        }
-    }
-
+    
 }
 

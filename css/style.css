@@ -38,7 +38,7 @@
   transition: 500ms;
 }
 
-.prod-sec .prod-sec-img, .serv-sec .serv-sec-img, .not-art .not-img {
+.serv-sec .serv-sec-img, .not-art .not-img {
   width: 35%;
   height: auto;
   margin: 1rem;
@@ -196,7 +196,7 @@
   transition: 500ms;
 }
 
-.prod-sec .prod-sec-img, .serv-sec .serv-sec-img, .not-art .not-img {
+.serv-sec .serv-sec-img, .not-art .not-img {
   width: 35%;
   height: auto;
   margin: 1rem;
@@ -267,7 +267,7 @@
   transition: 500ms;
 }
 
-.prod-sec .prod-sec-img, .serv-sec .serv-sec-img, .not-art .not-img {
+.serv-sec .serv-sec-img, .not-art .not-img {
   width: 35%;
   height: auto;
   margin: 1rem;
@@ -302,7 +302,7 @@
   transition: 500ms;
 }
 
-.prod-sec .prod-sec-img, .serv-sec .serv-sec-img, .not-art .not-img {
+.serv-sec .serv-sec-img, .not-art .not-img {
   width: 35%;
   height: auto;
   margin: 1rem;
@@ -343,7 +343,7 @@
   transition: 500ms;
 }
 
-.prod-sec .prod-sec-img, .not-art .not-img, .serv-sec .serv-sec-img {
+.not-art .not-img, .serv-sec .serv-sec-img {
   width: 35%;
   height: auto;
   margin: 1rem;
@@ -367,6 +367,10 @@
   text-decoration: none;
   color: #000;
 }
+.prod-sec .card-img-standard {
+  max-width: 284px;
+  max-height: 284px;
+}
 .prod-sec .prod-card:hover {
   background-color: rgba(236, 82, 177, 0.397);
   transition: 500ms;
@@ -375,25 +379,25 @@
   margin-bottom: 1.5rem;
 }
 
-@media screen and (max-width: 768px) {
-  .prod-sec {
-    width: 70% !important;
-  }
+.btn-vaciar {
+  border: none;
+  background-color: #c024a683;
+  border-radius: 3px;
 }
-@media screen and (max-width: 576px) {
-  .prod-sec .prod-sec-img {
-    width: 70% !important;
-  }
-  .prod-sec .prod-sec-img-app {
-    width: 85%;
-  }
+
+.btn-quitar {
+  border: none;
 }
+.btn-quitar .btn-color-standard {
+  color: #FF0000;
+}
+
 .header .nav-a-item:hover {
   background-color: rgba(153, 145, 145, 0.192);
   transition: 500ms;
 }
 
-.not-art .not-img, .serv-sec .serv-sec-img, .prod-sec .prod-sec-img {
+.not-art .not-img, .serv-sec .serv-sec-img {
   width: 35%;
   height: auto;
   margin: 1rem;
@@ -435,7 +439,7 @@
   transition: 500ms;
 }
 
-.not-art .not-img, .serv-sec .serv-sec-img, .prod-sec .prod-sec-img {
+.not-art .not-img, .serv-sec .serv-sec-img {
   width: 35%;
   height: auto;
   margin: 1rem;
@@ -481,7 +485,7 @@
   transition: 500ms;
 }
 
-.not-art .not-img, .serv-sec .serv-sec-img, .prod-sec .prod-sec-img {
+.not-art .not-img, .serv-sec .serv-sec-img {
   width: 35%;
   height: auto;
   margin: 1rem;
