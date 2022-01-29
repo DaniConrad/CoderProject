@@ -392,6 +392,18 @@
   color: #FF0000;
 }
 
+.btn-cart {
+  border: none;
+  background-color: transparent;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.btn-cart:hover {
+  background-color: rgba(209, 198, 198, 0.425);
+  transition: 500ms;
+}
+
 .header .nav-a-item:hover {
   background-color: rgba(153, 145, 145, 0.192);
   transition: 500ms;

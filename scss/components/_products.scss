@@ -44,6 +44,23 @@
     }
 }
 
+.btn-cart{
+    border: none;
+    background-color: transparent;
+    padding: 8px;
+    border-radius: 10px;
+}
+.btn-cart:hover{
+    background-color: rgba(209, 198, 198, 0.425);
+    transition: 500ms;
+}
+
+// .prod{
+    
+//     .precio{
+//         display: none;
+//     }
+// }
 
 
 @media screen and (max-width: 768px) {

@@ -1,14 +1,14 @@
-const stockProductos =[
-    {id:1, name:"Cámara exterior", desc:"Bastará con alimentarla con 12Vcc y proveerle de Wifi, podrás marcar zonas para recibir notificaciones.", precio: 6000, cantidad: 1,img:"../img/prod-security/ext-wifi-cam.webp"},
-    {id:2, name:"Cámara domo", desc:"Deberás alimentarla con 12vcc y asignarle una red de Wifi estable, esta ofrecerá una visión 360.", precio: 8100, cantidad: 1,img:"../img/prod-security/gadnic-cam.webp"},
-    {id:3, name:"Cámara robótica exterior", desc:"Alimentación de 12Vcc, wifi, con movimiento, elimina puntos ciegos sin necesidad de modificar su anclaje.", precio: 5500, cantidad: 1,img:"../img/prod-security/motor-ext-cam.webp"},
-    {id:4, name:"Cámara robótica interior", desc:"Alimentación de 12Vcc, wifi, con movimiento, podrás revisar consultorios, oficinas o cualquier interior.", precio: 6100, cantidad: 1, img:"../img/prod-security/robot-cam.webp"},
-    
-];
+$(()=>{
+    renderCarrito(obtenerStorage('carrito'))
+    carrito.push(...obtenerStorage('carrito'))
+    console.log(carrito);
+});
+
+
 
 // -------Storage--------
-function guardarStorage() {
-    localStorage.setItem('carrito', JSON.stringify(carrito));
+function guardarStorage(clave, valor) {
+    localStorage.setItem(clave, JSON.stringify(valor));
 }
 
 function obtenerStorage(clave){
@@ -34,7 +34,7 @@ const renderCards = (array) => {
                             <div class="card-body">
                                 <h5 class="card-title">${producto.name}</h5>
                                 <p class="card-text">${producto.desc}</p>
-                                <p class="precio ">$${producto.precio}</p>
+                                <p class="precio">$${producto.precio}</p>
                                 <button onclick="agregarCarrito(${producto.id})" class="btn btn-primary btnCard">Agregar al Carrito</button>
                             </div>
                         </div>
@@ -49,21 +49,37 @@ renderCards(stockProductos)
 
 
 // -------Carrito--------
-
-
 let carrito = []
 
+// // -------Agregar al carrito--------
+
+
 const agregarCarrito = (prodId) => {
+    // console.log(prodId);
     let item = stockProductos.find( (prod) => prod.id === parseInt(prodId))
     if (carrito.find( (prod) => prod.id === parseInt(prodId))) {
         item.cantidad++;
+        console.log(item.cantidad);
+        console.log(carrito);
         
-    }else{
-      carrito.push(item)  
     }
-    
-    renderCarrito();
+    else{
+      carrito.push(item)  
+      console.log("push");
+    }
+    if (item.cantidad===0) {
+        item.cantidad++;
+        console.log(3);
+    }
+    guardarStorage('carrito', carrito);
+    renderCarrito(carrito);
 }
+
+// ------- Fin de agregar al carrito--------
+
+
+
+
 // --Sacar unidad--
 const eliminarCarrito = (prodId) => {
     let item = carrito.find( (prod) => prod.id === prodId )
@@ -74,7 +90,9 @@ const eliminarCarrito = (prodId) => {
           carrito.splice(indice, 1)  
         }
     }
-    renderCarrito()
+    guardarStorage('carrito', carrito);
+    renderCarrito(carrito)
+    
 }
 // --Fin de sacar unidad--
 
@@ -82,7 +100,8 @@ const vaciarCarrito = document.getElementById('vaciarCarrito')
 
 vaciarCarrito.onclick = function() { 
     carrito = [];
-    renderCarrito();
+    guardarStorage('carrito', carrito);
+    renderCarrito(carrito);
  }
 
 
@@ -94,21 +113,22 @@ vaciarCarrito.onclick = function() {
 const obtenerCarrito = document.getElementById('carrito')
 const totalizador = document.getElementById('totalizador')
 
-const renderCarrito = () => {
+const renderCarrito = (carrito) => {
     obtenerCarrito.innerHTML = ""
+    
 
     carrito.forEach( (prod) => {
         const div = document.createElement('div')
         div.className = "productoEnCarrito d-flex"
         div.innerHTML = `
-                        <p class="card-text">${prod.name} Precio: ${prod.precio} cantidad: ${prod.cantidad}</p>
+                        <p class="card-text">${prod.name} Precio: $${prod.precio} x ${prod.cantidad}</p>
                         <button onclick="eliminarCarrito(${prod.id})" class="btn-quitar"><i class="bi bi-x-octagon btn-color-standard"></i></button>
                         `
         
         obtenerCarrito.appendChild(div)
     })
     totalizador.innerText = carrito.reduce((acu, prod) => acu + prod.precio*prod.cantidad, 0)
-    guardarStorage();
+    
 }
 
 
