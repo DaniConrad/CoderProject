@@ -7,8 +7,3 @@ $('.btnCard').click(function () {
         .delay(399)
         .fadeIn(100)
 });
-
-// $('.prod').hover(function () {
-//     $('.precio')
-//         .fadeIn(200)
-// });
