@@ -1,9 +1,9 @@
-// ---- Cards ----
+
 fetch('../../js/stock.json')
     .then(response => response.json())
     .then(data => {
         const stockProductos = data
-
+// ---- Cards ----
         const cards = document.getElementById("cardsContainer");
 
         const renderCards = (array) => {
@@ -38,20 +38,17 @@ fetch('../../js/stock.json')
                 const button = document.getElementById(`${producto.id}`)
                 button.addEventListener('click', () => {
                     agregarCarrito(producto.id)
-                    console.log(producto.id);
                 })
 
             });
         }
         BtnGetId(stockProductos)
         // -------------End of getting button add to cart-----------
-
+        
         const agregarCarrito = (prodId) => {
             let item = stockProductos.find((prod) => prod.id === parseInt(prodId))
             if (carrito.find((prod) => prod.id === parseInt(prodId))) {
-                item.cantidad++;
-                console.log(`Este es el sumador de la función "agregarCarrito" --> ${item.cantidad}`);
-                console.log(carrito);
+                carrito.find((prod) => prod.id === parseInt(prodId)).cantidad++
             } else {
                 carrito.push(item)
             }
@@ -99,7 +96,10 @@ function obtenerStorage(clave) {
 
 // -------Cart--------
 let carrito = []
-carrito.push(...obtenerStorage('carrito'));
+if (obtenerStorage('carrito') !== null) {
+  carrito.push(...obtenerStorage('carrito'));  
+}
+console.log(carrito);
 // -------End of Cart --------
 
 // --Sacar unidad--
