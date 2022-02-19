@@ -14,7 +14,6 @@
         "precio": 8100, 
         "cantidad": 1,
         "img":"../img/prod-security/gadnic-cam.webp", 
-        "idAnim":102, 
         "type":"cam"
     },
     {
@@ -24,8 +23,7 @@
         "precio": 5500, 
         "cantidad": 1,
         "img":"../img/prod-security/motor-ext-cam.webp", 
-        "idAnim":103, 
-        "type":"cam2"
+        "type":"cam"
     },
     {
         "id":4, "name":"Cámara robótica interior", 
@@ -33,8 +31,31 @@
         "precio": 6100, 
         "cantidad": 1, 
         "img":"../img/prod-security/robot-cam.webp", 
-        "idAnim":104, 
-        "type":"cam2"
+        "type":"cam"
+    },
+    {
+        "id":5, "name":"Lámpara Wifi", 
+        "desc":"Sólo con cambiar tu clásica lámpara y conectarla al Wifi desde la App estarás dando un gran paso al automatismo del hogar.", 
+        "precio": 1500, 
+        "cantidad": 1, 
+        "img":"../img/prod-lights/lampara.webp", 
+        "type":"lam"
+    },
+    {
+        "id":6, "name":"Reflector Wifi", 
+        "desc":"Cuenta con un gran poder de iluminación y la capacidad de usarlo como decoración a raíz de su panel RGB.", 
+        "precio": 3000, 
+        "cantidad": 1, 
+        "img":"../img/prod-lights/reflector.webp", 
+        "type":"lam"
+    },
+    {
+        "id":7, "name":"Tira led Wifi", 
+        "desc":"Kit completo con fuente, controlador y 5 metros de tira led RGB, aprovecha a decorar tus ambientes.", 
+        "precio": 5000, 
+        "cantidad": 1, 
+        "img":"../img/prod-lights/tira-led.webp", 
+        "type":"lam"
     }
     
 ]

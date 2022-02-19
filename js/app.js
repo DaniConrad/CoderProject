@@ -1,4 +1,3 @@
-
 fetch('../../js/stock.json')
     .then(response => response.json())
     .then(data => {
@@ -31,6 +30,7 @@ fetch('../../js/stock.json')
         }
         renderCards(stockProductos)
 
+
         // -------------Getting button add to cart-----------
         const BtnGetId = (array) => {
             array.forEach((producto) => {
@@ -43,6 +43,7 @@ fetch('../../js/stock.json')
             });
         }
         BtnGetId(stockProductos)
+
         // -------------End of getting button add to cart-----------
         
         const agregarCarrito = (prodId) => {
@@ -118,7 +119,7 @@ const eliminarCarrito = (prodId) => {
 }
 // --Fin de sacar unidad--
 
-
+// --Vaciar carrito--
 const vaciarCarrito = document.getElementById('vaciarCarrito')
 
 vaciarCarrito.onclick = function () {
@@ -127,6 +128,39 @@ vaciarCarrito.onclick = function () {
     renderCarrito(carrito);
 }
 
+// --Comprar carrito--
+const comprarCarrito = document.getElementById('buy')
+
+comprarCarrito.onclick = function () {
+    if (carrito == 0) {
+        Swal.fire({
+            position: 'top',
+            icon: 'error',
+            title: '¡El carrito está vacío!',
+            showConfirmButton: false,
+            timer: 1500,
+            backdrop: ` rgba(233, 85, 80, 0.452)`
+          })
+    }else{
+        carrito = [];
+        guardarStorage('carrito', carrito);
+        renderCarrito(carrito);
+        Swal.fire({
+            position: 'top',
+            title: '¡Gracias por comprar nuestros productos!',
+            width: 600,
+            color: '#716add',
+            imageUrl: 'https://gogeticons.com/frontend/web/icons/data/1/2/7/2/9/happy_512.png',
+            imageWidth: 300,
+            imageHeight: 300,
+            imageAlt: 'Happy guy',
+            showConfirmButton: false,
+            timer: 2000,
+            backdrop: `rgba(0,0,123,0.4) `
+          })
+    }
+    
+}
 
 // -------Print de Carrito--------
 
@@ -139,10 +173,20 @@ function renderCarrito() {
 
     carrito.forEach((prod) => {
         const div = document.createElement('div')
-        div.className = "productoEnCarrito d-flex"
+        div.className = "productoEnCarrito d-flex align-items-center"
         div.innerHTML = `
-                        <p class="card-text">${prod.name} Precio: $${prod.precio} x ${prod.cantidad}</p>
-                        <button onclick="eliminarCarrito(${prod.id})" class="btn-quitar"><i class="bi bi-x-octagon btn-color-standard"></i></button>
+                    <div class="container">
+                        <div class="row">
+                          <div class="col">
+                            <p class="card-text"><img src="${prod.img}" alt="" class="cart-img-added m-1"> ${prod.name}
+                          </div>
+                          <div class="col d-flex align-items-center justify-content-end">
+                          <p >Precio: $${prod.precio} x ${prod.cantidad}
+                          <button onclick="eliminarCarrito(${prod.id})" class="btn-added-cart"><i class="bi bi-dash-circle"></i></button>
+                      </p>
+                      
+                        </p>
+                      </div>
                         `
 
         obtenerCarrito.appendChild(div)

@@ -1,74 +1,154 @@
 @import '../base/extend';
 @import '../base/variables';
 
-
-
 .prod-sec {
     @extend %box-standard;
-    
-    a:visited{
-        text-decoration: none;
-        color: #000;
-    }
-    
-    a:link{
+
+    a:visited {
         text-decoration: none;
         color: #000;
     }
 
-        .card-img-standard {
+    a:link {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .card-img-standard {
         max-width: 284px;
         max-height: 284px;
     }
-    
-    .prod-card:hover{
+
+    .prod-card:hover {
         background-color: rgba(236, 82, 177, 0.397);
-         transition: 500ms;
+        transition: 500ms;
 
     }
-    .prod-card-text-lights{
+
+    .prod-card-text-lights {
         margin-bottom: 1.5rem;
     }
-    
-    
+
+
 }
-.btn-vaciar{
+
+.btn-vaciar {
     border: none;
     background-color: #c024a683;
     border-radius: 3px;
 }
-.btn-quitar{
+
+.btn-added-cart {
     border: none;
-    .btn-color-standard{
-        color: 	#FF0000;
+
+    i {
+        color: #e75dd5;
     }
 }
 
-.btn-cart{
+.cart-img-added {
+    width: 20%;
+}
+
+.slider-cart {
+    width: 40rem;
+}
+
+.btn-cart {
     border: none;
     background-color: transparent;
     padding: 8px;
     border-radius: 10px;
 }
-.btn-cart:hover{
+
+.btn-cart:hover {
     background-color: rgba(209, 198, 198, 0.425);
     transition: 500ms;
 }
 
-// .prod{
-    
-//     .precio{
-//         display: none;
-//     }
-// }
+.buy-btn-anim {
+    font-size: 1.5rem;
+    border: none;
+    background-color: #4124c083;
+    border-radius: 3px;
+}
 
+.back-color-standard {
+    background-color: #e75dd58c;
+}
 
-@media screen and (max-width: 768px) {
-    
+.my-filter {
+    max-width: 16rem;
+}
+
+.form {
+    display: none;
+    position: absolute;
+    top: 10rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1;
+
+    .contact-form {
+        background: radial-gradient(circle, rgba(184, 135, 156, 1) 0%, rgba(162, 191, 226, 0.8785889355742297) 100%);
+        width: 40rem;
+        margin: auto;
+        border-radius: 10px;
+
+        .input-style {
+            max-width: 20rem;
+        }
+
+        .form-btn {
+            width: 5rem;
+            font-family: Arial;
+            color: #ffffff;
+            font-size: 15px;
+            padding: 10px;
+            text-decoration: none;
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            border-radius: 8px;
+            -webkit-box-shadow: 0px 1px 3px #666666;
+            -moz-box-shadow: 0px 1px 3px #666666;
+            box-shadow: 0px 1px 3px #666666;
+            text-shadow: 2px 1px 3px #666666;
+            border: solid #d91c71 2px;
+            background: -webkit-gradient(linear, 0 0, 0 100%, from(#c790a9), to(#bf1c66));
+            background: -moz-linear-gradient(top, #c790a9, #bf1c66);
+        }
+
+        .form-btn:hover {
+            background: #cf479b;
+        }
+
+        .form-close {
+            position: relative;
+            right: -10rem;
+            border: none;
+            background-color: transparent;
+
+            .form-btn-close {
+                width: 3rem;
+            }
+        }
+    }
 }
 
 
-@media screen and (max-width: 576px) {
-    
+
+// Clases generales
+.visual {
+    display: block;
 }
 
+.special-hidden {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {}
+
+
+@media screen and (max-width: 576px) {}

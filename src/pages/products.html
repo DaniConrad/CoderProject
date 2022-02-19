@@ -33,6 +33,9 @@
   <!--AOS-->
   <link rel="stylesheet" rel="preconnect" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+  <!-- SweetAlert -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
   <!--CSS-->
   <link rel="stylesheet" href="../../css/style.css">
 
@@ -71,7 +74,7 @@
                 <a class="nav-link fs-5 header-link" href="services.html">SERVICIOS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-5 header-link" href="#contact">CONTACTO</a>
+                <a class="nav-link fs-5 header-link" id="contactBtn">CONTACTO</a>
               </li>
             </ul>
           </div>
@@ -91,23 +94,14 @@
               <!-- Static cart image -->
               <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
                 class="bi bi-cart4 cart-img" viewBox="0 0 16 16">
-                <path
-                  d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
               </svg>
-              <!-- Animated plus cart image -->
-              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" id="addedCart"
-                class="bi bi-cart-plus" style="display: none;" viewBox="0 0 16 16">
-                <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z" />
-                <path
-                  d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
-              </svg>
-            </button>
           </div>
         </div>
       </div>
     </div>
-    <!-- Cart slider animated
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <!-- Cart slider animated -->
+    <div class="offcanvas offcanvas-start slider-cart" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasExampleLabel">Carrito</h5>
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -115,32 +109,62 @@
       <div class="offcanvas-body">
         <div id="carrito1">
           <p id="carrito"></p>
-          <p>Total: $ <span id="totalizador"></span></p>
           <button type="submit" id="vaciarCarrito" class="btn-vaciar">Vaciar Carrito</button>
+          <div class="total-container d-flex me-3 justify-content-end">
+            <p class="d-flex justify-content-end m-1 me-3">Total: $ <span id="totalizador"></span></p>
+          </div>
+          <div class="d-flex justify-content-end me-4">
+            <button id="buy" class="buy-btn-anim p-2">Comprar carrito</button>
+          </div>
         </div>
       </div>
-       -->
   </header>
 
-<!-- Filter -->
-  <div class="filter-prod container m-3" id="filterContainer">
-    <select class="" id="filter" multiple aria-label="">
-      <option selected value="all">Viendo todos los productos</option>
-      <option value="cam">Cámaras</option>
-      <option value="cam2">Lámparas</option>
-    </select>
-  </div>
-
-      <div id="carrito1">
-        <p id="carrito"></p>
-        <p>Total: $ <span id="totalizador"></span></p>
-        <button type="submit" id="vaciarCarrito" class="btn-vaciar">Vaciar Carrito</button>
+    <!-- Contact form -->
+  <form class="container form" id="form">
+      <div class="contact-form d-flex flex-column">
+        <div class="d-flex justify-content-center">
+          <h3 class="m-1">Contacto - PingTec</h3>
+          <button id="formClose" class="form-close" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+          </svg></i></button>
+        </div>
+        <h6 class="m-1">Ingresa tu nombre y apellido</h4>
+        <input class="input-style m-1 input-required" name="nombre" type="text" placeholder="Nombre y apellido">
+        <h6 class="m-1">Ingresa tu email</h4>
+        <input class="input-style m-1 input-required" name="email" type="email" placeholder="usuario@email.com">
+        <h6 class="m-1">Ingresa tu mensaje</h4>
+        <textarea class="m-1 input-required form-input-email" name="mensaje" placeholder="Ingresa tu mensaje."></textarea>
+        <div class="d-flex align-items-center flex-column">
+          <h5 class="special-hidden alert alert-danger" id="formAlert">¡Todos los campos son obligatorios!</h5>
+        <button class="m-1 form-btn" id="formSend" type="submit">Enviar</button>
+        </div>
       </div>
+  </form>
+
+<!-- Filter -->
+<div class="filter-prod d-flex m-3" id="filterContainer">
+<select class="form-select form-select-md mb-3 my-filter" id="filter">
+  <option selected value="all">Viendo todos los productos</option>
+  <option value="cam">Cámaras</option>
+  <option value="lam">Lámparas</option>
+</select>
+</div>
 
   <!-- Cards -->
-  <section id="cardsContainer" class="container d-flex prod-sec">
+  <section id="cardsContainer" class="d-flex prod-sec flex-wrap justify-content-center">
+    
   </section>
-
+  <div class="position-sticky bottom-0 end-0 p-3" style="z-index: 11">
+      <div id="addedCartAlert" class="toast back-color-standard" style="display:none;">
+        <div class="toast-header back-color-standard">
+          <img src="https://img.icons8.com/external-prettycons-flat-prettycons/47/000000/external-shopping-cart-shopping-prettycons-flat-prettycons-1.png" class="rounded me-2" alt="cart with products">
+        </div>
+        <div class="toast-body">
+          <p class="fs-5">¡Agregado al Carrito!</p>
+        </div>
+      </div>
+    </div>
   <!-- Pié de página -->
   <footer class="footer">
     <div class="container">
@@ -203,14 +227,15 @@
   </footer>
 
 <!-- CDN jQuery -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <!-- Fin CDN jQuery -->
 
-  <!-- JS -->
-  <!-- <script src="../../js/stock.js"></script> -->
+<!-- JS -->
+  <script src="../../js/anim.js"></script>
   <script src="../../js/app.js"></script>
-  <script src="../../js/anims.js"></script>
+  <script src="../../js/contact.js"></script>
+  
 
   <!--AOS initializer-->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -227,6 +252,11 @@
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
   </script>
   <!--Fin Bundle for Bootstrap-->
+  
+  
+
+  
+
 </body>
 
 </html>
